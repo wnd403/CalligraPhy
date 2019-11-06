@@ -20,8 +20,8 @@ public class IntroFontTextView extends AppCompatTextView {
             //폰트설정을 생성자에서..
             Typeface typeface= Typeface.createFromAsset(context.getAssets(),"fonts/Swagger.ttf");
             setTypeface(typeface);
-            setTextSize(32);
-            setTextColor(Color.RED);
+            setTextSize(24);
+            setTextColor(Color.WHITE);
         }
 
 
@@ -31,8 +31,8 @@ public class IntroFontTextView extends AppCompatTextView {
 
         Typeface typeface= Typeface.createFromAsset(context.getAssets(),"fonts/Swagger.ttf");
         setTypeface(typeface);
-        setTextSize(32);
-        setTextColor(Color.RED);
+        setTextSize(24);
+        setTextColor(Color.WHITE);
     }
 
 }

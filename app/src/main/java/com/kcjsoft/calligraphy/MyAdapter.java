@@ -16,7 +16,7 @@ public class MyAdapter extends FragmentPagerAdapter {
         //Fragment객체 생성
         fragments[0]=new HomeFragment();
         fragments[1]=new CommunityFragment();
-        fragments[2]=new OnedayclassFragment();
+        fragments[2]=new OnedayFragment();
         fragments[3]=new BusinessFragment();
     }
 

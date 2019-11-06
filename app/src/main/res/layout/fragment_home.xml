@@ -7,12 +7,12 @@
     android:padding="16dp">
 
 <androidx.recyclerview.widget.RecyclerView
-    android:id="@+id/recycler"
+    android:id="@+id/home_recycler"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
-    android:layout_below="@+id/appbar"/>
+    app:spanCount="2"/>
 
 
 </RelativeLayout>
