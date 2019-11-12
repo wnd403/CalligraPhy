@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    app:cardCornerRadius="12dp"
+    android:layout_margin="4dp"
+    app:cardBackgroundColor="#FFFFFF"
+    app:cardElevation="4dp"
+    app:contentPadding="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/com_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="title"
+            android:textSize="16sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:maxLines="1"
+            android:textStyle="bold"
+            android:padding="4dp"/>
+
+
+
+
+        <TextView
+            android:id="@+id/com_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="name"
+            android:textSize="12dp"
+            android:layout_marginBottom="4dp"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/cardview_shadow_start_color"/>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/icon_circle"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/lino3"
+                android:padding="4dp"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/com_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="content"
+                android:padding="4dp"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_toRightOf="@+id/icon_circle"/>
+
+        </RelativeLayout>
+
+
+
+        <TextView
+            android:id="@+id/com_hour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="2019-11-11 13:47"/>
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

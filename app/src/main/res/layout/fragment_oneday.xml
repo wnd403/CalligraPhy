@@ -3,7 +3,25 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:padding="8dp">
+
+
+    <TextView
+        android:id="@+id/tv_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Oneday Class"
+        android:gravity="center"
+        android:textSize="24dp"
+        android:textStyle="bold|italic"
+        android:layout_marginBottom="16dp"/>
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/oneday_swipe"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/one_recycler"
@@ -11,6 +29,6 @@
         android:layout_height="match_parent"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         android:orientation="vertical"
-        android:layout_below="@+id/appbar"/>
+        android:layout_below="@+id/tv_top"/>
 
 </RelativeLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="260dp"
+    app:cardCornerRadius="12dp"
+    android:layout_margin="4dp"
+    app:cardBackgroundColor="#FFFFFF"
+    app:cardElevation="4dp"
+    app:contentPadding="8dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/bus_iv"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/lino10"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"/>
+
+        <TextView
+            android:id="@+id/bus_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/bus_iv"
+            android:text="name"
+            android:paddingTop="16dp"
+            android:paddingLeft="8dp"
+            android:textSize="16dp"
+            android:paddingBottom="4dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/bus_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/bus_iv"
+            android:layout_below="@id/bus_name"
+            android:text="phone"
+            android:paddingTop="4dp"
+            android:paddingLeft="8dp"
+            android:paddingBottom="4dp"
+            android:textSize="16dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/bus_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/bus_iv"
+            android:layout_below="@+id/bus_phone"
+            android:text="email"
+            android:paddingTop="4dp"
+            android:paddingLeft="8dp"
+            android:paddingBottom="4dp"
+            android:textSize="16dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/bus_youtube"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/bus_iv"
+            android:layout_below="@+id/bus_email"
+            android:text="youtube"
+            android:paddingTop="4dp"
+            android:paddingLeft="8dp"
+            android:paddingBottom="4dp"
+            android:textSize="16dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/bus_career"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/bus_iv"
+            android:layout_below="@+id/bus_youtube"
+            android:text="career"
+            android:paddingTop="4dp"
+            android:paddingLeft="8dp"
+            android:paddingBottom="4dp"
+            android:textSize="14dp"
+            android:textStyle="bold"/>
+
+
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>

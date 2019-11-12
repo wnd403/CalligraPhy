@@ -11,6 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
@@ -41,7 +42,7 @@ public class HomeAdapterRecycler extends RecyclerView.Adapter {
         VH vh=(VH)holder;
         HomeItem item = homeItems.get(position);
 
-        Glide.with(context).load(item.iv).into(vh.iv);
+        Picasso.get().load(item.iv).into(vh.iv);
 
 
     }
@@ -58,6 +59,7 @@ public class HomeAdapterRecycler extends RecyclerView.Adapter {
 
         public VH(@NonNull View itemView) {
             super(itemView);
+
 
             iv=itemView.findViewById(R.id.iv);
         }
